@@ -9,7 +9,7 @@ import MovieDetails from './pages/MovieDetails';
 import Search from './pages/Search';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Watchlist from './pages/Watchlist';
+// import Watchlist from './pages/Watchlist';
 import AdminDashboard from './pages/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import AdminRoute from './components/AdminRoute';
@@ -45,11 +45,11 @@ function App() {
                 <Route path="/register" element={<Register />} />
                 
                 {/* Protected Routes */}
-                <Route path="/watchlist" element={
+                {/* <Route path="/watchlist" element={
                   <ProtectedRoute>
                     <Watchlist />
                   </ProtectedRoute>
-                } />
+                } /> */}
                 
                 {/* Admin Routes */}
                 <Route path="/admin" element={
